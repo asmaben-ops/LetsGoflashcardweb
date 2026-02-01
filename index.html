@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Let's Go Flash Cards</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Let's Go Flash Cards</h1>
+  <div id="card" class="card" onclick="flipCard()">
+    <div id="card-front" class="front">Hello</div>
+    <div id="card-back" class="back">مرحبا</div>
+  </div>
+  <button id="next-btn" onclick="nextCard()">Next Card</button>
+  <div id="progress">Card 1 / 3</div>
+  <div class="add-card">
+    <input type="text" id="front-input" placeholder="English">
+    <input type="text" id="back-input" placeholder="Arabic">
+    <button onclick="addCard()">Add Card</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
